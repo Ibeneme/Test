@@ -1,0 +1,185 @@
+.components-folder {
+  width: 90%;
+  height: fit-content;
+  background: #32127569;
+  backdrop-filter: blur(0px);
+  border-radius: 16px;
+  margin-top: 96px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+table {
+  border: 0.6px solid #cccccc11;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table tr {
+  background-color: #ffffff17;
+  border: 0.1px solid #ffffff45;
+  padding: 0.55em;
+  border-radius: 6px;
+  margin-top: 12px;
+}
+.Peer-table {
+  text-align: left;
+}
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.pagination {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.page-number {
+  font-size: 16px;
+}
+.page-numbers {
+  font-size: 14px;
+}
+
+.container-folder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 24px;
+  margin: 0;
+}
+
+.container-folder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 24px;
+  margin: 0;
+}
+
+.rectangleStyle {
+    width: fit-content;
+    background-color: #ffffff24;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 900;
+    font-size: 16px;
+    border: 1.5px solid #ffffff45;
+    margin-bottom: -12px;
+  }
+  
+
+  .div-for-channel-bos-and-channels-tables{
+    margin-top: 64px
+  }
+
+@media screen and (max-width: 1100px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 1px solid #dddddd12;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #dddddd21;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  table td::before {
+    /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+  .Peer-table {
+    text-align: right;
+  }
+
+  .components-folder {
+    width: 100%;
+    height: fit-content;
+    background: #32127569;
+    backdrop-filter: blur(0px);
+    border-radius: 16px;
+    margin-top: 96px;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .container-folder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 12px;
+    margin: 0;
+  }
+}
+
+
+
+  
+@keyframes zoomIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+ .table-table tbody tr {
+    animation: zoomIn 0.5s ease-in-out forwards;
+    animation-delay: 0.2s; 
+  }
+  

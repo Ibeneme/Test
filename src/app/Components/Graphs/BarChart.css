@@ -1,0 +1,319 @@
+.bar-chart-container {
+  text-align: center;
+  border-radius: 12px;
+  padding: 24px 0px;
+  margin-top: -12px;
+}
+
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  height: 350px;
+  background-color: #ffffff12;
+  border: 1px solid #dddddd25;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.bar {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 10px;
+  cursor: pointer;
+  position: relative;
+  width: fit-content;
+}
+
+@keyframes roll-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bar {
+  animation: roll-up 0.7s ease-in-out;
+}
+
+.barsss {
+  margin: 0 4px;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 12px;
+  width: 12px;
+  transition: height 0.3s ease-in-out;
+  cursor: pointer;
+  position: absolute;
+  bottom: 40px;
+  left: 36px;
+}
+.x-spread {
+  margin: 0 4px;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 12px;
+  width: 12px;
+  transition: height 0.3s ease-in-out;
+  cursor: pointer;
+  position: absolute;
+  bottom: 40px;
+  left: 12px;
+}
+.xx-spread {
+  margin: 0 4px;
+  background-color: plum;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 12px;
+  width: 12px;
+  transition: height 0.3s ease-in-out;
+  cursor: pointer;
+  position: absolute;
+  bottom: 40px;
+  left: 24px;
+}
+.xxxx-spread {
+  margin: 0 4px;
+  background-color: mediumseagreen;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 12px;
+  width: 12px;
+  transition: height 0.3s ease-in-out;
+  cursor: pointer;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+}
+
+.xxx-spread {
+  margin: 0 4px;
+  background-color: magenta;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 12px;
+  width: 12px;
+  transition: height 0.3s ease-in-out;
+  cursor: pointer;
+  position: absolute;
+  bottom: 40px;
+  left: 48px;
+}
+
+.xxxxx-spread {
+  margin: 0 4px;
+  background-color: orangered;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 12px;
+  width: 12px;
+  transition: height 0.3s ease-in-out;
+  cursor: pointer;
+  position: absolute;
+  bottom: 40px;
+  left: 24px;
+}
+.display-spread {
+  font-size: 12px;
+  max-width: 30px;
+}
+
+/* .bar-label {
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 100px;
+    }
+     */
+.explanation,
+.flex-explanation {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  font-size: 12px;
+}
+.explanation {
+  margin-top: 48px;
+  gap: 48px;
+}
+
+.blocked-box-max-htc {
+  height: 16px;
+  width: 16px;
+  content: " ";
+  background-color: mediumseagreen;
+}
+
+.blocked-box-min-htc {
+  height: 16px;
+  width: 16px;
+  content: " ";
+  background-color: magenta;
+}
+
+.blocked-box-capacity {
+  height: 16px;
+  width: 16px;
+  content: " ";
+  background-color: plum;
+}
+
+.blocked-box-fee {
+  height: 16px;
+  width: 16px;
+  content: " ";
+  background-color: orange;
+}
+.blocked-box-two {
+  height: 16px;
+  width: 16px;
+  content: " ";
+  background-color: blanchedalmond;
+}
+@media (max-width: 600px) {
+  .bar {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 12px;
+    transition: height 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    width: fit-content;
+  }
+
+  .barsss {
+    margin: 0 4px;
+    background-color: blanchedalmond;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 12px;
+    width: 6px;
+    transition: height 0.3s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    left: 6px;
+  }
+  .x-spread {
+    margin: 0 4px;
+    background-color: orange;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 12px;
+    width: 6px;
+    transition: height 0.3s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    left: 18px;
+  }
+  .xx-spread {
+    margin: 0 4px;
+    background-color: plum;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 12px;
+    width: 6px;
+    transition: height 0.3s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    left: 24px;
+  }
+
+  .display-spread {
+    font-size: 12px;
+    width: 10px;
+    
+  }
+  .xxxx-spread {
+    margin: 0 4px;
+    background-color: mediumseagreen;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 12px;
+    width: 6px;
+    transition: height 0.3s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+  }
+
+  .xxx-spread {
+    margin: 0 4px;
+    background-color: magenta;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 12px;
+    width: 6px;
+    transition: height 0.3s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    left: 12px;
+  }
+
+  .xxxxx-spread {
+    margin: 0 4px;
+    background-color: orangered;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 12px;
+    width: 6px;
+    transition: height 0.3s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    left: 24px;
+  }
+  .bar-chart {
+    display: flex;
+    align-items: flex-end;
+    height: 300px;
+    background-color: #ffffff12;
+    border: 1px solid #dddddd25;
+    border-radius: 4px;
+    padding: 12px;
+  }
+  .explanation {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 24px;
+    font-size: 16px;
+  }
+}

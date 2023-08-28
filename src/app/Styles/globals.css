@@ -1,0 +1,47 @@
+:root {
+  --foreground-rgb: #631189;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 16;
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #631189, #620659, #321275, #131126);
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: #631189;
+    --background-start-rgb: #631189;
+    --background-end-rgb: #631189;
+    background: linear-gradient(to bottom, #631189, #620659, #321275, #131126);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background: linear-gradient(to bottom, #631189, #620659, #321275, #131126);
+    color-scheme: dark;
+  }
+}
+
+
+
+
+
