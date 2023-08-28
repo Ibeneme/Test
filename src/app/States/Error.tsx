@@ -1,4 +1,5 @@
 import React from "react";
+import "./state.css";
 
 interface ErrorProps {
   src: string;

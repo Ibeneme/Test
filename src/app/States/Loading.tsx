@@ -1,5 +1,5 @@
 import React from "react";
-import "./State.css";
+import "./state.css";
 
 const ShimmerLoader: React.FC = () => {
   return (
